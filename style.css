@@ -1,32 +1,32 @@
 /*   fonts */
-</style>
- body {
+<style>
+     body {
       background-color: #0d0d0d;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: Satoshi, sans-serif;
       color: rgb(252, 252, 252);
     }
 
     .container {
       backdrop-filter: blur(0px);
       background-color: rgba(28, 28, 28, 0.5);
-      border: 2px solid rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.144);
       border-radius: 20px;
       padding: 30px;
-      max-width: 400px;
+      max-width: 500px;
       width: 100%;
-      box-shadow: 0 0 20px rgba(255,255,255,0.05);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.075);
       transition: transform 0.1s ease-out;
       will-change: transform;
     }
 
     .profile-img {
-      width: 120px;
-      height: 120px;
+      width: 160px;
+      height: 150px;
       object-fit: cover;
       border-radius: 20px;
       margin: 0 auto 20px;
@@ -36,10 +36,10 @@
 
     .username {
       font-size: 28px;
-      font-weight: 600;
+      font-weight: 650;
       text-align: center;
-      text-shadow: 0 0 8px white;
-      margin-bottom: 15px;
+      text-shadow: 0 0 10px white;
+      margin-bottom: 33px;
     }
 
     .badges, .socials {
@@ -63,10 +63,10 @@
     }
 
     .audio-box {
-      margin-top: 40px;
+      margin-top: 66px;
       background: rgba(255,255,255,0.08);
       padding: 20px;
-      border-radius: 15px;
+      border-radius:20px;
     }
 
     audio {
@@ -75,12 +75,14 @@
     }
 
     .glow-box {
-      margin: 0 auto 14px;
-      background-color: transparent;
-      border-radius: 25%;
-      padding: 10px;
-      box-shadow: transparent; /* glow bianco */
+      margin: 0 auto 13px;
+      background-color: rgba(70, 69, 69, 0.514);
+      border-radius: 20px;
+      padding: 8px;
+      box-shadow: rgba(151, 150, 150, 0.719); /* glow bianco */
       display: flex;
+      left: 38%;
+      top: 45%;
       justify-content: center;
       align-items: center;
       position: absolute;
@@ -90,10 +92,82 @@
     }
 
     .icon {
-      width: 23px;
-      height: 15px;
+      width: 24px;
+      height: 17px;
+      display: flex;
+      filter: drop-shadow(0 0 4px #fff);
       align-items: center;
-      color: white;
+      color: rgb(255, 255, 255);
     }
 
-</style>
+    .audio-manager {
+      position: absolute;
+      top: 1%;
+      left: 22px;
+      width: 6%;
+      height: 18%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .box-manager {
+      position: absolute;
+      top: 5%;
+      left: 15px;
+      width: 48px;
+      height: 49px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.404), rgba(0, 0, 0, 0.24));
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(134, 133, 133, 0.904);
+      pointer-events: all;
+      cursor: pointer;
+  }
+
+  .discord {
+  background-color: transparent;
+     color: #ffff;
+      border-radius: 10px;
+      margin-top: 15px;
+      padding: 15px;
+      display: flex;
+      left: 250px;
+      top: 280px;
+      height: 50px;
+      filter: drop-shadow(#ffffffbb 0 0 8px);
+      position: absolute;
+      cursor: pointer;
+  }
+
+  .github {
+    background-color: transparent;
+     color: #ffff;
+      border-radius: 10px;
+      margin-top: 15px;
+      padding: 15px;
+      display: flex;
+      left: 208px;
+      top: 289px;
+      filter: drop-shadow(#ffffffbb 0 0 5.9px);
+      height: 29px;
+      position: absolute;
+      cursor: pointer;
+  }
+
+  .website {
+    background-color: transparent;
+     color: #ffff;
+      border-radius: 10px;
+      margin-top: 15px;
+      padding: 15px;
+      display: flex;
+      left: 291px;
+      top: 291px;
+      height: 28px;
+      filter: drop-shadow(#ffffffbb 0 0 5.9px);
+      position: absolute;
+      cursor: pointer;
+  }
+
+  </style>
