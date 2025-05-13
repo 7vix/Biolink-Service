@@ -2,59 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>7vix Site - Interactive</title>
-    </head>
-<body>
-  <div class="glow-box">
-    <svg xmlns="http://www.w3.org/2000/svg" class="weULz0_6e35a26824038e290cad" width="1em" height="1em" viewBox="4.39 2 15.22 20.97"><path fill="currentColor" d="m12 8.5l2.116 5.088l5.492.44l-4.184 3.585l1.278 5.36L12 20.1l-4.702 2.872l1.278-5.36l-4.184-3.584l5.492-.44L12 8.5ZM8 2v9H6V2h2Zm10 0v9h-2V2h2Zm-5 0v5h-2V2h2Z"></path></svg>
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="1em" height="1em" viewBox="2.3 2 19.39 20">
-      <path fill="currentColor" d="m16.06 13.09l5.63 5.59l-3.32 3.28l-5.59-5.59v-.92l2.36-2.36h.92m.91-2.53L16 9.6l-4.79 4.8v1.97L5.58 22L2.3 18.68l5.59-5.59h1.97l.78-.78L6.8 8.46H5.5L2.69 5.62L5.31 3l2.8 2.8v1.31L12 10.95l2.66-2.66l-.96-1.01L15 5.97h-2.66l-.65-.65L15 2l.66.66v2.66L16.97 4l3.28 3.28c1.09 1.1 1.09 2.89 0 3.98l-1.97-2.01l-1.31 1.31Z"></path></svg>
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="1em" height="1em" viewBox="7 32 465 448">
-      <path fill="currentColor" d="M396.31 32H264l84.19 112.26L396.31 32zm-280.62 0l48.12 112.26L248 32H115.69zM256 74.67L192 160h128l-64-85.33zm166.95-23.61L376.26 160H488L422.95 51.06zm-333.9 0L23 160h112.74L89.05 51.06zM146.68 192H24l222.8 288h.53L146.68 192zm218.64 0L264.67 480h.53L488 192H365.32zm-35.93 0H182.61L256 400l73.39-208z">
-      </path>
-      </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="1 1.5 22 21">
-      <path fill="currentColor" d="m8.6 22.5l-1.9-3.2l-3.6-.8l.35-3.7L1 12l2.45-2.8l-.35-3.7l3.6-.8l1.9-3.2L12 2.95l3.4-1.45l1.9 3.2l3.6.8l-.35 3.7L23 12l-2.45 2.8l.35 3.7l-3.6.8l-1.9 3.2l-3.4-1.45l-3.4 1.45Zm2.35-6.95L16.6 9.9l-1.4-1.45l-4.25 4.25l-2.15-2.1L7.4 12l3.55 3.55Z"/>
-    </svg>
-  </div>
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1&amp;f[]=array@400&amp;display=swap" rel="stylesheet">  <img src="" alt="">
+  <title>Your Site</title>
+  <style>
+     body {
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Satoshi, sans-serif;
+      color: rgb(252, 252, 252);
+    }
+
+    .container {
+      backdrop-filter: blur(0px);
+      background-color: rgba(28, 28, 28, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.144);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.075);
+      transition: transform 0.1s ease-out;
+      will-change: transform;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin: 0 auto 20px;
+      display: block;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    .username {
+      font-size: 30px;
+      font-weight: 650;
+      text-align: center;
+      text-shadow: 0 0 15px rgb(255, 255, 255);
+      margin-bottom: 33px;
+      left: 225px;
+      top: -4px;
+      width: 10%;
+      height: 10%;
+      animation: sparkle-animation 2s infinite alternate;
+      background-image: url('image.png/gif');
+      position: relative;
+
+    }
+
+    @keyframes sparkle-animation {
+        0% { opacity: 0.5; }
+        100% { opacity: 1; }
+}
+
+    .badges, .socials {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+
+    .badge, .social {
+      font-size: 20px;
+      filter: drop-shadow(0 0 2px #fff);
+      cursor: pointer;
+    }
+
+    .info {
+      text-align: center;
+      font-size: 20px;
+      opacity: 0.7;
+    }
+
+    .audio-box {
+      margin-top: 66px;
+      background: rgba(255,255,255,0.08);
+      padding: 20px;
+      border-radius:20px;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .glow-box {
+      margin: 0 auto 13px;
+      background-color: rgba(70, 69, 69, 0.514);
+      border-radius: 20px;
+      padding: 8px;
+      box-shadow: rgba(151, 150, 150, 0.719); /* glow bianco */
+      display: flex;
+      left: 38%;
+      top: 45%;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      pointer-events: all;
+      transition: transform 0.1s ease-out;
+      will-change: transform;
+    }
+
+    .icon {
+      width: 24px;
+      height: 17px;
+      display: flex;
+      filter: drop-shadow(0 0 4px #fff);
+      align-items: center;
+      color: rgb(255, 255, 255);
+    }
+
+    .audio-manager {
+      position: absolute;
+      top: 1%;
+      left: 22px;
+      width: 6%;
+      height: 18%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .box-manager {
+      position: absolute;
+      top: 5%;
+      left: 15px;
+      width: 48px;
+      height: 49px;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.404), rgba(0, 0, 0, 0.24));
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(134, 133, 133, 0.904);
+      pointer-events: all;
+      cursor: pointer;
+  }
+   </head>
 <body>
   <div class="container" id="card">
-    <img class="profile-img" src="file.webp" alt="7vix">
+    <img class="profile-img" src="image.png" alt="name">
     <div class="username">7vix</div>
-    
-    <div class="badges">
-      <div class="badge"></div>
-      <div class="badge"></div>
-      <div class="badge"></div>
-      <div class="badge"></div>
-      <div class="badge"></div>
-    </div>
-    <div class="socials">
-      <a href="https://discord.com/channel/@me" class="social"></a>
-      <a href="https://github.com/7vix" class="social"></a>
-      <a href="mailto:7vixstaffapplication@gmail.com" class="social"></a>
-      <a href="https://t.me/gunsbio" class="social"></a>
-      <a href="https://hris.sh" class="social"></a>
-    </div>
-    <div class="info">"YOUR_TEXT"</div>
 
-    <div class="audio-box">
-      <strong>YOUR_TEXT</strong>
+    <svg xmlns="http://www.w3.org/2000/svg"class="box-manager" width="1em" height="1em" viewBox="0 0 48 48"></svg>
+    <defs><mask id="ipTVolumeNotice0"><g fill="none" stroke="#fff" stroke-width="4"></g>
+      <path fill="#555" stroke-linejoin="round" d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M32 15a11.91 11.91 0 0 1 1.684 1.859A12.07 12.07 0 0 1 36 24c0 2.654-.846 5.107-2.278 7.09A11.936 11.936 0 0 1 32 33"></path><path stroke-linecap="round" d="M34.236 41.186C40.084 37.696 44 31.305 44 24c0-7.192-3.796-13.496-9.493-17.02"></path></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTVolumeNotice0)"></path></svg>
+      <mask id="ipTVolumeNotice0"></mask>
+      <svg xmlns="http://www.w3.org/2000/svg" class="audio-manager" width="1em" height="1em" viewBox="0 0 48 48">
+        <g fill="none" stroke="#fff" stroke-width="4">
+          <path fill="#555" stroke-linejoin="round" d="M24 6v36c-7 0-12.201-9.16-12.201-9.16H6a2 2 0 0 1-2-2V17.01a2 2 0 0 1 2-2h5.799S17 6 24 6Z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M32 15a11.91 11.91 0 0 1 1.684 1.859A12.07 12.07 0 0 1 36 24c0 2.654-.846 5.107-2.278 7.09A11.936 11.936 0 0 1 32 33"></path>
+          <path stroke-linecap="round" d="M34.236 41.186C40.084 37.696 44 31.305 44 24c0-7.192-3.796-13.496-9.493-17.02"></path></svg>
+    
+          <div class="glow-box" id="icon-box">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="1em" height="1em" viewBox="1 3 14 18"><path fill="currentColor" d="M17.66 11.2c-.23-.3-.51-.56-.77-.82c-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32c-2.59 2.08-3.61 5.75-2.39 8.9c.04.1.08.2.08.33c0 .22-.15.42-.35.5c-.23.1-.47.04-.66-.12a.58.58 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5c.14.6.41 1.2.71 1.73c1.08 1.73 2.95 2.97 4.96 3.22c2.14.27 4.43-.12 6.07-1.6c1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6c-1.12.4-2.24-.16-2.9-.82c1.19-.28 1.9-1.16 2.11-2.05c.17-.8-.15-1.46-.28-2.23c-.12-.74-.1-1.37.17-2.06c.19.38.39.76.63 1.06c.77 1 1.98 1.44 2.24 2.8c.04.14.06.28.06.43c.03.82-.33 1.72-.93 2.27Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="1em" height="1em" viewBox="1.39 2 15.22 20.97"><path fill="currentColor" d="m12 8.5l2.116 5.088l5.492.44l-4.184 3.585l1.278 5.36L12 20.1l-4.702 2.872l1.278-5.36l-4.184-3.584l5.492-.44L12 8.5ZM8 2v9H6V2h2Zm10 0v9h-2V2h2Zm-5 0v5h-2V2h2Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="1em" height="1em" viewBox="1.3 2 20.39 20">
+        <path fill="currentColor" d="m16.06 13.09l5.63 5.59l-3.32 3.28l-5.59-5.59v-.92l2.36-2.36h.92m.91-2.53L16 9.6l-4.79 4.8v1.97L5.58 22L2.3 18.68l5.59-5.59h1.97l.78-.78L6.8 8.46H5.5L2.69 5.62L5.31 3l2.8 2.8v1.31L12 10.95l2.66-2.66l-.96-1.01L15 5.97h-2.66l-.65-.65L15 2l.66.66v2.66L16.97 4l3.28 3.28c1.09 1.1 1.09 2.89 0 3.98l-1.97-2.01l-1.31 1.31Z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="1em" height="1em" viewBox="2 30 465 448">
+        <path fill="currentColor" d="M396.31 32H264l84.19 112.26L396.31 32zm-280.62 0l48.12 112.26L248 32H115.69zM256 74.67L192 160h128l-64-85.33zm166.95-23.61L376.26 160H488L422.95 51.06zm-333.9 0L23 160h112.74L89.05 51.06zM146.68 192H24l222.8 288h.53L146.68 192zm218.64 0L264.67 480h.53L488 192H365.32zm-35.93 0H182.61L256 400l73.39-208z">
+        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="1 1.5 22 21">
+        <path fill="currentColor" d="m8.6 22.5l-1.9-3.2l-3.6-.8l.35-3.7L1 12l2.45-2.8l-.35-3.7l3.6-.8l1.9-3.2L12 2.95l3.4-1.45l1.9 3.2l3.6.8l-.35 3.7L23 12l-2.45 2.8l.35 3.7l-3.6.8l-1.9 3.2l-3.4-1.45l-3.4 1.45Zm2.35-6.95L16.6 9.9l-1.4-1.45l-4.25 4.25l-2.15-2.1L7.4 12l3.55 3.55Z"/>
+      </svg>
+      </div>
+        </g>
+      </svg><div class="audio-box">
+      <strong>dark thoughts - lil tecca</strong>
       <audio controls>
-        <source src="file.mp3" type="audio/mpeg" />
+        <source src="audio.mp3"  type="audio/mpeg" autoplay>
         Your browser does not support the audio element.
       </audio>
     </div>
   </div>
+<!-- Audio -->
+<audio id="audioPlayer" src="audio.mp3" autoplay></audio>
 
+  <audio id="audioPlayer" src="audio.mp3" autoplay></audio>
+  <!-- Icona volume -->
+  <div id="volumeToggle" style="cursor:pointer;">
+    <!-- Icona iniziale: volume attivo -->
+    <svg id="audio-manager" xmlns="http://www.w3.org/2000/svg" class="audio-manager" width="1em" height="1em" viewBox="0 0 48 48"></svg> </div>
   <script>
     const card = document.getElementById("card");
     document.addEventListener("mousemove", (e) => {
       const { clientX: x, clientY: y } = e;
       const { innerWidth: w, innerHeight: h } = window;
-      const offsetX = ((x - w / 2) / w) * 30;
+      const offsetX = ((x - w / 2) / w) * 40;
       const offsetY = ((y - h / 2) / h) * 40;
       card.style.transform = `rotateY(${offsetX}deg) rotateX(${-offsetY}deg)`;
       perspective(1000);
@@ -67,3 +206,4 @@
   </script>
 </body>
 </html>
+ 
